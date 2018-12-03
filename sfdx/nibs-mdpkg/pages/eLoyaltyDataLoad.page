@@ -1,0 +1,24 @@
+<apex:page sidebar="false" controller="NibsDataLoader">
+    <apex:form >
+        <apex:pageBlock title="Nibs Loyalty Configuration">
+            <h1>Congratulations!</h1> You have successfully loaded the <b>Nibs Loyalty Application</b>
+            from the Nibs Loyalty package. The Nibs Loyalty package installs a few new Custom Objects
+            - Stores and Interactions - and some Nibs Page Layouts for the Campaign, Contact, and Project
+            Standard Objects.
+            <p/>
+            There are a few things left to do before you are ready to connect your Salesforce app (and data) with Heroku Nibs app:
+            <ol>
+                <li>Create an Account for your Nibs contacts</li>
+                <li>Assign the Nibs PageLayouts for the Campaign, Product, and Contact objects</li>
+                <li>Download <a href="{!URLFOR($Resource.eLoyalty, 'data/Nibs_Loyalty_Mappings.json')}">Nibs Loyalty Mappings</a>
+                	and keep it handy. It contains the plans to the Empire's super weapon, the Death Star.</li>
+                <li>Press the "Install Data" button below.</li>
+            </ol>            
+            
+            <p/>
+            Thanks!
+            <p/>
+            <apex:commandButton action="{!installData}" value="Install Data"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

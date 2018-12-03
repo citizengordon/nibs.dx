@@ -1,0 +1,164 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef1"
+            },
+            "Name": "Buy 4 Get 6: Best of San Francisco",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Buy 4, get 6 of of the city's finest native chocolatiers, old and new: Tcho, Dandelion, Recchiutti, Ghirardelli, Sharffenburger, Guittard.",
+            "image__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/Best+of+San+Francisco+Campaign.png"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef2"
+            },
+            "Name": "Buy 2 Get 1 Free: Dandelion Chocolate for Connoisseurs",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Purists, Foodies and Afficionados: Buy 2 Bars Get 1 Free",
+            "image__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/Purists+Campaign+.png"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef3"
+            },
+            "Name": "Free Shipping on Wine & Chocolate Pairings",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Free Shipping on all wine, champagne, and chocolate pairings.",
+            "image__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion2.jpg"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef4"
+            },
+            "Name": "10% off EcoChocolate: Fair Trade and Organic Chocolates",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "10% off chocolate that makes you feel as good as they tastes! Fair Trade and Organic chocolates assortment..",
+            "image__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/ritual2.jpg"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef5"
+            },
+            "Name": "Free Shipping on Truffles for Mother's Day",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Free Shipping for all Mother?s Day gifts places >72 hours before Sunday, May 11",
+            "image__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/soma1.jpg"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef6"
+            },
+            "Name": "Nuts about nuts: 30% off mixed chocolate covered nuts",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Are you nuts for nuts?",
+            "image__c": "http://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/nuts.jpg"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef7"
+            },
+            "Name": "10% of EcoTruffles",
+            "Type": "Offer",
+            "Status": "In Progress",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Twice as much Eco! Twice as much fun!!",
+            "image__c": "http://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/truffles.jpg"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef8"
+            },
+            "Name": "2 for 1 dark chocolate",
+            "Type": "Offer",
+            "Status": "Planned",
+            "StartDate": "2015-07-22",
+            "EndDate": "2015-08-22",
+            "IsActive": true,
+            "Description": "Get 2 for 1",
+            "image__c": "http://dark"
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef9"
+            },
+            "Name": "International Electrical Engineers Association Trade Show - Mar 4-5, 2002",
+            "Type": "Trade Show",
+            "Status": "Planned",
+            "StartDate": "2018-05-25",
+            "EndDate": "2018-05-26",
+            "IsActive": true
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef10"
+            },
+            "Name": "GC Product Webinar - Jan 7, 2002",
+            "Type": "Webinar",
+            "Status": "Completed",
+            "StartDate": "2018-03-30",
+            "EndDate": "2018-03-30",
+            "IsActive": true
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef11"
+            },
+            "Name": "User Conference - Jun 17-19, 2002",
+            "Type": "Conference",
+            "Status": "Planned",
+            "StartDate": "2018-09-07",
+            "EndDate": "2018-09-09",
+            "IsActive": true
+        },
+        {
+            "attributes": {
+                "type": "Campaign",
+                "referenceId": "CampaignRef12"
+            },
+            "Name": "DM Campaign to Top Customers - Nov 12-23, 2001",
+            "Type": "Direct Mail",
+            "Status": "Completed",
+            "StartDate": "2018-02-02",
+            "EndDate": "2018-02-13",
+            "IsActive": true
+        }
+    ]
+}

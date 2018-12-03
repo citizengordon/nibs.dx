@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Stock_Image__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Image</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Milk</fullName>
+                    <default>false</default>
+                    <label>Milk</label>
+                </value>
+                <value>
+                    <fullName>Nuts</fullName>
+                    <default>false</default>
+                    <label>Nuts</label>
+                </value>
+                <value>
+                    <fullName>Truffles</fullName>
+                    <default>false</default>
+                    <label>Truffles</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>campaignPage__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Page</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>image__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Image</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>pic__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(image__c, &#39;Image&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>publishDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Publish Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign.Name}</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

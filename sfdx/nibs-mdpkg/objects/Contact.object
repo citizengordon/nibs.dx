@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>male</fullName>
+                    <default>true</default>
+                    <label>male</label>
+                </value>
+                <value>
+                    <fullName>female</fullName>
+                    <default>false</default>
+                    <label>female</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LoyaltyId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Loyalty App Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Loyalty_Badge__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (AND(Loyalty_Points__c &gt;= 1000, Loyalty_Points__c &lt; 5000),
+    IMAGE(&quot;/resource/eLoyalty/images/level1Badge.png&quot;, &quot;Forastero&quot;, 100, 100),
+
+IF (AND(Loyalty_Points__c &gt;= 5000, Loyalty_Points__c  &lt; 10000),
+    IMAGE(&quot;/resource/eLoyalty/images/level2Badge.png&quot;, &quot;Trinitario&quot;, 100, 100),
+
+IF (Loyalty_Points__c &gt;= 10000,
+    IMAGE(&quot;/resource/eLoyalty/images/level3Badge.png&quot;, &quot;Criollo&quot;, 100, 100),
+
+IMAGE(&quot;/resource/eLoyalty/images/level0Badge.png&quot;, &quot;New Nibbler&quot;, 100, 100))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loyalty_Points__c</fullName>
+        <description>Summary of all loyalty points for a user</description>
+        <externalId>false</externalId>
+        <label>Loyalty Points</label>
+        <summarizedField>Interaction__c.Points__c</summarizedField>
+        <summaryForeignKey>Interaction__c.Contact__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Preference__c</fullName>
+        <externalId>false</externalId>
+        <label>Preference</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Coke</fullName>
+                    <default>false</default>
+                    <label>Coke</label>
+                </value>
+                <value>
+                    <fullName>Diet Coke</fullName>
+                    <default>false</default>
+                    <label>Diet Coke</label>
+                </value>
+                <value>
+                    <fullName>Water</fullName>
+                    <default>false</default>
+                    <label>Water</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Small</fullName>
+                    <default>false</default>
+                    <label>Small</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Large</fullName>
+                    <default>false</default>
+                    <label>Large</label>
+                </value>
+                <value>
+                    <fullName>X-Large</fullName>
+                    <default>false</default>
+                    <label>X-Large</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fbUserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Facebook Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>password__c</fullName>
+        <externalId>false</externalId>
+        <label>password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>pic__c</fullName>
+        <externalId>false</externalId>
+        <formula>image(pictureURL__c,&#39;picture&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Picture</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>pictureURL__c</fullName>
+        <externalId>false</externalId>
+        <label>Picture URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+</CustomObject>
