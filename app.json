@@ -1,8 +1,21 @@
 {
-    "name": "Nibs",
-    "description": "Customer loyalty application",
+    "name": "nibs.dx",
     "scripts": {},
     "env": {},
-    "addons": ["heroku-postgresql", "papertrail", "herokuconnect"]
-
-}
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [
+      "herokuconnect",
+      "papertrail",
+      "heroku-postgresql"
+    ],
+    "stack": "heroku-18",
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
