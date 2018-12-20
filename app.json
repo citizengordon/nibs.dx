@@ -1,5 +1,6 @@
 {
     "name": "Nibs",
     "description": "Customer loyalty application",
-    "addons": ["heroku-postgresql:hobby-dev", "papertrail:choklad"]
+    "addons": ["heroku-postgresql", "papertrail", "herokuconnect"]
+
 }
