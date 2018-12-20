@@ -67,7 +67,9 @@ Have fun!
 (**you may need to select a more unique app name . . .**)
 
 11. Deploy the app code to Heroku (note we are deploying the `heroku` subtree folder, not the entire repo - this has consequences: specifically no `Heroku Button`, and no auto-deploys from Github  
-`git subtree push --prefix heroku heroku master`
+`git push heroku master` or click on the button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 12. Provision a Heroku Postgres database  
 `heroku addons:create heroku-postgresql:hobby-dev -a nibs-loyalty-app`
