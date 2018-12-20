@@ -1,0 +1,21 @@
+{
+    "name": "nibs.dx",
+    "scripts": {},
+    "env": {},
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [
+      "herokuconnect",
+      "papertrail",
+      "heroku-postgresql"
+    ],
+    "stack": "heroku-18",
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
