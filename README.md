@@ -62,14 +62,16 @@ Have fun!
 
 #### Deploy and Configure the Heroku Nibs Loyalty Application
 
-10. Using the Heroku CLI (heroku) create a Heroku app in the top level nibs.dx project folder  
+Click on the button and skip steps 10 - 14 or follow steps 10 - 14
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+10. Using the Heroku CLI (heroku) create a Heroku app in the top level nibs.dx project folder, and then follow steps 11 - 14.
 `heroku create nibs-loyalty-app`  
 (**you may need to select a more unique app name . . .**)
 
 11. Deploy the app code to Heroku (note we are deploying the `heroku` subtree folder, not the entire repo - this has consequences: specifically no `Heroku Button`, and no auto-deploys from Github  
-`git push heroku master` or click on the button:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+`git push heroku master` 
 
 12. Provision a Heroku Postgres database  
 `heroku addons:create heroku-postgresql:hobby-dev -a nibs-loyalty-app`
