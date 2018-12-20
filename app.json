@@ -1,6 +1,8 @@
 {
     "name": "Nibs",
     "description": "Customer loyalty application",
+    "scripts": {},
+    "env": {},
     "addons": ["heroku-postgresql", "papertrail", "herokuconnect"]
 
 }
