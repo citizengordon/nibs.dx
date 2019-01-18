@@ -44,7 +44,7 @@ Have fun!
     
     `https://na85.lightning.force.com/lightning/r/Account/0011U000003O3MlQAK/view`
 
-    Account ID == **PASTE--YOURS--HERE** (you will need this in a bit)
+    Account ID == 0010o00002CarMUAAZ (you will need this in a bit)
 
 9. Assign the Nibs Page Layouts for the Campaign, Contact, and Product objects to the Administrator Profile  
 
